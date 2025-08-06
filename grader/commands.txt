@@ -1,0 +1,8 @@
+coursera_autograder grade local grader ../volumes/project/react-intro-template '{"partId":"<YOUR_PART_ID>"}' --dst-dir ./results
+docker build -t grader:latest ./image
+
+coursera_autograder get_resource_limits local grader ../volumes/project/react-intro-template '{"partId":"FN02W"}'
+
+coursera_autograder get_resource_limits fullstack-foundations XuWK7 FN02W 
+
+coursera_autograder get_resource_limits SiWC6tOHEeu0JA70HcoQjw XuWK7 FN02W 
