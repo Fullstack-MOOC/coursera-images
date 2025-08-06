@@ -16,6 +16,20 @@ echo "Starting development server..."
 npm run dev &
 DEV_PID=$!
 
+echo "Waiting for server to be ready..."
+# Wait for server to start on port 8080
+for i in {1..30}; do
+    if curl -s http://localhost:8080 > /dev/null 2>&1; then
+        echo "Server is ready!"
+        break
+    fi
+    if [ $i -eq 30 ]; then
+        echo "Server failed to start within 30 seconds"
+        kill $DEV_PID 2>/dev/null || true
+        exit 1
+    fi
+    sleep 1
+done
 
 echo "Running E2E tests..."
 npm run test:e2e

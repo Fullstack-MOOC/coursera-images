@@ -1,4 +1,4 @@
-coursera_autograder grade local grader ../volumes/project/react-intro-template '{"partId":"<YOUR_PART_ID>"}' --dst-dir ./results
+coursera_autograder grade local grader ../volumes/project/react-intro-template '{"partId":"<YOUR_PART_ID>"}' --dst-dir ./results --mem-limit 4096
 docker build -t grader:latest ./image
 
 coursera_autograder get_resource_limits local grader ../volumes/project/react-intro-template '{"partId":"FN02W"}'
