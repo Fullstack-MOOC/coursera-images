@@ -4,7 +4,7 @@ This repository contains Docker images and configurations for fullstack MOOC.
 
 ## Structure
 
-- **vscode/** - Contains code to create VSCode lab environment
+- **lab-enviroment/** - Contains code to create VSCode lab environment
 - **grader/** - Contains code to set up grader image
 
 ## Usage
