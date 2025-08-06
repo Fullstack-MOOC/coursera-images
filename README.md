@@ -1,6 +1,6 @@
 # Fullstack MOOC Images
 
-This repository contains Docker images and configurations for a fullstack MOOC (Massive Open Online Course) environment.
+This repository contains Docker images and configurations for fullstack MOOC.
 
 ## Structure
 
